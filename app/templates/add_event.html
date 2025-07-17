@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2 class="section-title">Add New Event</h2>
+
+<form action="{{ url_for('main.add_event') }}" method="POST">
+    <div class="mb-3">
+        <label for="EventName" class="form-label">Event Name</label>
+        <input type="text" class="form-control" name="EventName" id="EventName" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="Description" class="form-label">Description</label>
+        <textarea class="form-control" name="Description" id="Description" rows="3" required></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label for="Date" class="form-label">Date</label>
+        <input type="date" class="form-control" name="Date" id="Date" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="Location" class="form-label">Location</label>
+        <input type="text" class="form-control" name="Location" id="Location" required>
+    </div>
+
+    <button type="submit" class="btn">Add Event</button>
+</form>
+{% endblock %}

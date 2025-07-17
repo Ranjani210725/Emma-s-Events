@@ -1,0 +1,12 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.card {
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
